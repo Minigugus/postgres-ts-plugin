@@ -1,0 +1,25 @@
+{
+  "name": "postgres-ts-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "ln -s ../dist node_modules/postgres-ts-plugin",
+    "build": "rollup -c",
+    "clean": "rm -rf dist"
+  },
+  "description": "SQL requests checking for the `postgres` package",
+  "author": "Minigugus",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "rollup": "^2.23.1",
+    "rollup-plugin-typescript2": "^0.27.2"
+  },
+  "dependencies": {
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "postgres": "^2.0.0-beta.0"
+  }
+}
